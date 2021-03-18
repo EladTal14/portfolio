@@ -17,6 +17,7 @@ export default function Home() {
           width={1920}
           alt="https://www.touristisrael.com/free-things-to-do-in-tel-aviv/24755/"
         />
+        <h1>this works</h1>
       </main>
 
       <footer>
