@@ -1,0 +1,11 @@
+.clock {
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  width: 100%;
+  &:hover {
+    background-color: black;
+  }
+}
