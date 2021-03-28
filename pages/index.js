@@ -1,64 +1,42 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import AppHeader from '../cmps/AppHeader'
+import { ContactMe } from '../cmps/ContactMe'
+import { GetInTouch } from '../cmps/GetInTouch'
+import { SideBar } from '../cmps/SideBar'
 
 export default function Home() {
+  const [show, setShow] = useState('me')
   return (
-    <div className="container">
+    <div className="container" >
       <Head>
         <title>Elad Tal | HomePage</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <AppHeader />
+      <SideBar />
       <main>
-        <Image
-          src="/images/hero.jpg"
-          height={1080}
-          width={1920}
-          alt="https://www.touristisrael.com/free-things-to-do-in-tel-aviv/24755/"
-        />
-        <h1>this works</h1>
+
       </main>
 
-      <footer>
-
-      </footer>
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          min-height: 100vh
         }
 
         main {
-          flex: 1;
+          flex: 3;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
 
-        footer img {
-          margin-left: 0.5rem;
-        }
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+
 
       `}</style>
 
@@ -74,6 +52,10 @@ export default function Home() {
 
         * {
           box-sizing: border-box;
+        }
+
+        a{
+          text-decoration: none;
         }
       `}</style>
     </div>

@@ -1,6 +1,11 @@
 @import "./cmps/AppHeader";
 @import "./cmps/Clock";
-
+@import "./cmps/Home";
+@import "./cmps/GetInTouch";
+@import "./cmps/SideBar";
 body {
   font-size: 1.2rem;
+}
+ul {
+  padding: 0;
 }
