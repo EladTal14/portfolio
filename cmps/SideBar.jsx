@@ -12,17 +12,20 @@ export function SideBar({ setShow }) {
 
   }
   return (
-    <section className="side-bar">
+    <section className="side-bar" style={{
+      position: 'sticky', top: 0,
+      width: '100%', zIndex: 10
+    }}>
 
       <Image src="/images/imageNew.png" width="200" height="200" onClick={() => setShow('me')} />
 
       <h3 className="name">Elad Tal</h3>
       <h4>Full Stack Developer</h4>
       <section className="buttons" ref={elButtons}>
-        <button onClick={() => setShow('portfolio')}>Portfolio <span className="hidden">&gt;</span></button>
-        <button onClick={() => setShow('offer')}>My offer <span className="hidden">&gt;</span></button>
-        <button onClick={() => setShow('contact')}>Contact me <span className="hidden">&gt;</span></button>
-        <button onClick={() => setShow('cv')}>My CV <span className="hidden">&gt;</span></button>
+        <button onClick={() => { setShow('portfolio'); openMenu() }}>Portfolio <span className="hidden">&gt;</span></button>
+        <button onClick={() => { setShow('offer'); openMenu() }}>My offer <span className="hidden">&gt;</span></button>
+        <button onClick={() => { setShow('contact'); openMenu() }}>Contact me <span className="hidden">&gt;</span></button>
+        <button onClick={() => { setShow('cv'); openMenu() }}>My CV <span className="hidden">&gt;</span></button>
       </section>
       <div className="menu-btn" ref={elMenuBtn} onClick={openMenu}>
         <div className="menu-btn__burger"></div>
