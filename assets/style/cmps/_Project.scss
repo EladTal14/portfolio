@@ -1,4 +1,10 @@
 .project {
+  & > * {
+    padding-left: 3px;
+  }
+  h1 {
+    margin: 5px 0 5px 0;
+  }
   .badges {
     img {
       margin-right: 2px;

@@ -1,16 +1,16 @@
 import Image from "next/image";
-import { useRef } from "react";
+
 import { GetInTouch } from "./GetInTouch";
 
-export function SideBar({ setShow }) {
-  const elMenuBtn = useRef(null)
-  const elButtons = useRef(null)
-  const openMenu = () => {
-    elMenuBtn.current.classList.toggle('open')
-    elButtons.current.classList.toggle('show')
+export function SideBar({ setShow, elButtons, elMenuBtn, openMenu }) {
+  // const elMenuBtn = useRef(null)
+  // const elButtons = useRef(null)
+  // const openMenu = () => {
+  //   elMenuBtn.current.classList.toggle('open')
+  //   elButtons.current.classList.toggle('show')
 
 
-  }
+  // }
   return (
     <section className="side-bar" style={{
       position: 'sticky', top: 0,

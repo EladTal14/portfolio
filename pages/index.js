@@ -9,9 +9,19 @@ import { GetInTouch } from '../cmps/GetInTouch'
 import Offer from '../cmps/Offer'
 import Portfolio from '../cmps/Portfolio'
 import { SideBar } from '../cmps/SideBar'
+import { useRef } from "react";
 
 export default function Home() {
   const [show, setShow] = useState('me')
+  const [dropDown, setDropDwon] = useState(false)
+  const elMenuBtn = useRef(null)
+  const elButtons = useRef(null)
+  const openMenu = () => {
+    elMenuBtn.current.classList.toggle('open')
+    elButtons.current.classList.toggle('show')
+    setDropDwon(!dropDown)
+
+  }
   return (
     <>
       <input type="checkbox" id="checkbox" />
@@ -20,8 +30,8 @@ export default function Home() {
           <title>Elad Tal | HomePage</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
-
-        <SideBar setShow={setShow} />
+        <SideBar setShow={setShow} elMenuBtn={elMenuBtn} elButtons={elButtons} openMenu={openMenu} />
+        {dropDown && <div style={{ height: 136 }}></div>}
         <main>
           {show === 'me' && <About />}
           {show === 'portfolio' && <Portfolio />}
