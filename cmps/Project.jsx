@@ -3,7 +3,8 @@ import Image from "next/image";
 export function Project({ project }) {
   const { name, tags, demoUrl, sourceUrl, desc, imgUrl } = project
   return (
-    <section className="project">
+    <section className="project " >
+      {/* <section className="project flicker-in-1" > */}
 
       <h1>{name}</h1>
       <Image src={imgUrl} width="400" height="200" />

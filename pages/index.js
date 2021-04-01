@@ -13,13 +13,13 @@ import { useRef } from "react";
 
 export default function Home() {
   const [show, setShow] = useState('me')
-  const [dropDown, setDropDwon] = useState(false)
+  const [dropDown, setDropDown] = useState(false)
   const elMenuBtn = useRef(null)
   const elButtons = useRef(null)
   const openMenu = () => {
     elMenuBtn.current.classList.toggle('open')
     elButtons.current.classList.toggle('show')
-    setDropDwon(!dropDown)
+    setDropDown(!dropDown)
 
   }
   return (
