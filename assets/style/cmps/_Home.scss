@@ -3,6 +3,13 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  .fake-div {
+    transition: height 0.3s ease-in-out;
+    height: 0;
+    &.shows {
+      height: 136px;
+    }
+  }
 }
 #checkbox {
   position: fixed;

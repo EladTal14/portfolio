@@ -31,7 +31,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.png" />
         </Head>
         <SideBar setShow={setShow} elMenuBtn={elMenuBtn} elButtons={elButtons} openMenu={openMenu} />
-        {dropDown && <div style={{ height: 136 }}></div>}
+        <div className={`fake-div ${dropDown ? 'shows' : ''}`}></div>
         <main>
           {show === 'me' && <About />}
           {show === 'portfolio' && <Portfolio />}
