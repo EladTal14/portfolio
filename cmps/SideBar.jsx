@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { useState } from "react";
 
 import { GetInTouch } from "./GetInTouch";
 
 export function SideBar({ setShow, elButtons, elMenuBtn, openMenu }) {
-
   return (
     <section className="side-bar" style={{
       position: 'sticky', top: 0,
