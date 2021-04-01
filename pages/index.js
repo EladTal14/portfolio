@@ -40,9 +40,9 @@ export default function Home() {
         main {
           flex: 3;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          // flex-direction: column;
+          // justify-content: center;
+          // align-items: center;
         }
 
 

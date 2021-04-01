@@ -1,7 +1,16 @@
 import Image from "next/image";
+import { useRef } from "react";
 import { GetInTouch } from "./GetInTouch";
 
 export function SideBar({ setShow }) {
+  const elMenuBtn = useRef(null)
+  const elButtons = useRef(null)
+  const openMenu = () => {
+    elMenuBtn.current.classList.toggle('open')
+    elButtons.current.classList.toggle('show')
+
+
+  }
   return (
     <section className="side-bar">
 
@@ -9,14 +18,15 @@ export function SideBar({ setShow }) {
 
       <h3 className="name">Elad Tal</h3>
       <h4>Full Stack Developer</h4>
-      <section className="buttons">
-
-
+      <section className="buttons" ref={elButtons}>
         <button onClick={() => setShow('portfolio')}>Portfolio <span className="hidden">&gt;</span></button>
         <button onClick={() => setShow('offer')}>My offer <span className="hidden">&gt;</span></button>
         <button onClick={() => setShow('contact')}>Contact me <span className="hidden">&gt;</span></button>
         <button onClick={() => setShow('cv')}>My CV <span className="hidden">&gt;</span></button>
       </section>
+      <div className="menu-btn" ref={elMenuBtn} onClick={openMenu}>
+        <div className="menu-btn__burger"></div>
+      </div>
       <section>
         <p>Get in Touch</p>
         <GetInTouch />
