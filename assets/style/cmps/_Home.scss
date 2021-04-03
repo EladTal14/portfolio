@@ -1,5 +1,5 @@
 .container {
-  background-image: url("/images/hero.jpg");
+  background-image: url("/images/hero2.png");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -12,7 +12,7 @@
   }
 }
 #checkbox {
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 18vw;
   appearance: none;
@@ -57,5 +57,8 @@
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
+  }
+  #checkbox {
+    position: fixed;
   }
 }
