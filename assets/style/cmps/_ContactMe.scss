@@ -9,9 +9,9 @@
   .contact {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 400px;
     .left {
-      justify-self: flex-end;
+      float: right;
     }
   }
 }
