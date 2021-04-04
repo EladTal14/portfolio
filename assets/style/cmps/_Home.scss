@@ -1,13 +1,14 @@
 .container {
-  background-image: url("/images/hero2.png");
+  background-image: url("/images/Volleyball.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  font-family: "Bahnschrift", Times, serif;
   .fake-div {
     transition: height 0.3s ease-in-out;
     height: 0;
     &.shows {
-      height: 136px;
+      height: 157.2px;
     }
   }
 }

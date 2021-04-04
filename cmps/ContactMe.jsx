@@ -2,7 +2,7 @@
 export const ContactMe = () => {
 
   return (
-    <section className="center">
+    <section className="middle">
       <h2>Contact me</h2>
       <p>I am available for hire and open to any ideas of cooperation.</p>
       <div className="contact">

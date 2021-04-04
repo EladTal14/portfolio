@@ -7,11 +7,11 @@
   }
   .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 11px;
     padding: 8px;
     .project {
-      background-color: #b8b5b5f5;
+      border: 2px solid black;
       padding: 3px;
       .tags {
         margin-bottom: 5px;
@@ -21,9 +21,8 @@
         justify-content: space-between;
 
         .myButton {
-          background-color: #44c767;
+          background-color: #d25a4d;
           border-radius: 28px;
-          border: 1px solid #18ab29;
           display: inline-block;
           cursor: pointer;
           color: #ffffff;
@@ -32,9 +31,10 @@
           padding: 16px 31px;
           text-decoration: none;
           text-shadow: 0px 1px 0px #2f6627;
+          border: 1px solid #941e00;
         }
         .myButton:hover {
-          background-color: #5cbf2a;
+          background-color: #f50e0e;
         }
         .myButton:active {
           position: relative;
@@ -42,7 +42,7 @@
         }
         .red {
           border: 1px solid #941e00;
-          background-color: #f53b3b;
+          background-color: #d25a4d;
           text-shadow: 0px 1px 0px #ed2f00;
           &:hover {
             background-color: #f50e0e;

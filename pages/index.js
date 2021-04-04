@@ -32,8 +32,8 @@ export default function Home() {
         </Head>
         <SideBar setShow={setShow} elMenuBtn={elMenuBtn} elButtons={elButtons} openMenu={openMenu} />
         <div className={`fake-div ${dropDown ? 'shows' : ''}`}></div>
-        <main>
-          {show === 'me' && <About />}
+        <main style={{ backgroundColor: show !== 'me' ? '#d3cece' : '' }}>
+          {show === 'me' && <About setShow={setShow} openMenu={openMenu} />}
           {show === 'portfolio' && <Portfolio />}
           {show === 'contact' && <ContactMe />}
           {show === 'offer' && <Offer />}
@@ -48,7 +48,7 @@ export default function Home() {
         }
 
         main {
-          flex: 3;
+          flex: 3.5;
           display: flex;
           // flex-direction: column;
           // justify-content: center;

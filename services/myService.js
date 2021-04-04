@@ -12,23 +12,14 @@ function getProjects() {
 const projects = [
   {
     id: '1',
-    name: 'taskooler',
+    name: 'Taskooler',
     tags: ['MongoDB', 'React', 'D&D', 'WebSockets'],
     imgUrl: '/images/taskooler-pic.png',
     demoUrl: 'https://taskooler.herokuapp.com/',
     sourceUrl: 'https://github.com/EladTal14/trello',
     desc: 'Clone Trello app with D&D and Websockets'
   },
-  {
-    id: '2',
-    name: 'memeGen',
-    tags: ['Canvas', 'Javascript', 'Cloudinary'],
-    imgUrl: '/images/memegen-pic.png',
-    demoUrl: 'https://eladtal14.github.io/git-Sprint-2-Meme-Generator/',
-    sourceUrl: 'https://github.com/EladTal14/git-Sprint-2-Meme-Generator',
-    desc: 'Meme generator for the entire family'
-  }
-  ,
+
   {
     id: '3',
     name: 'Appsus',
@@ -37,5 +28,15 @@ const projects = [
     demoUrl: 'https://eladtal14.github.io/git-Sprint-3/',
     sourceUrl: 'https://github.com/EladTal14/git-Sprint-3',
     desc: 'Clone to Google apps (Email,Notes,Books)'
+  },
+  {
+    id: '2',
+    name: 'MemeGen',
+    tags: ['Canvas', 'Javascript', 'Cloudinary'],
+    imgUrl: '/images/memegen-pic.png',
+    demoUrl: 'https://eladtal14.github.io/git-Sprint-2-Meme-Generator/',
+    sourceUrl: 'https://github.com/EladTal14/git-Sprint-2-Meme-Generator',
+    desc: 'Meme generator for the entire family'
   }
+
 ]

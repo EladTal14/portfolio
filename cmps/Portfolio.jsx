@@ -8,7 +8,7 @@ export default function Portfolio() {
 
   return (
     <section className="portfolio-container">
-      <h1>Projects</h1>
+      <h1>Portfolio</h1>
       <section className="projects">
         {myService.getProjects().map(project => <Project key={project.id} project={project} />)}
 

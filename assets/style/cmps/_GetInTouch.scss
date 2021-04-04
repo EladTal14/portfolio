@@ -1,18 +1,33 @@
 .get-in-touch {
-  display: flex;
-
-  & > * {
-    margin: 4px;
+  width: 100%;
+  padding-left: 16px;
+  .get-in-touch-links {
+    display: flex;
+    justify-content: center;
+    & > * {
+      margin-right: 6px;
+      transform: translate(-1.03rem, 0rem);
+    }
   }
-}
-a {
-  text-decoration: none;
-  color: unset;
-  color: black;
+  a {
+    text-decoration: none;
+    color: unset;
+    color: black;
+  }
+  .get-in-touch-p {
+  }
 }
 @media (max-width: 800px) {
   .get-in-touch {
     position: relative;
     left: -38px;
+    width: fit-content;
+  }
+}
+@media (max-width: 800px) {
+  .get-in-touch {
+    & > * {
+      transform: none;
+    }
   }
 }
