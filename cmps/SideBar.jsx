@@ -6,7 +6,7 @@ import { GetInTouch } from "./GetInTouch";
 export function SideBar({ setShow, elButtons, elMenuBtn, openMenu }) {
   return (
     <section className="side-bar">
-      <Image src="/images/imageNew.png" width="200" height="200" onClick={() => setShow('me')} />
+      <Image src="/images/imageNew.png" width="180" height="180" onClick={() => setShow('me')} />
 
       <h3 className="name">Elad Tal</h3>
       <h4>Full Stack Developer</h4>

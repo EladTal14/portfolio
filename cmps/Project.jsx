@@ -7,7 +7,10 @@ export function Project({ project }) {
       {/* <section className="project flicker-in-1" > */}
 
       <h1>{name}</h1>
-      <Image src={imgUrl} width="400" height="250" />
+      <div className="desc">
+        <pre>{desc}</pre>
+      </div>
+      <Image src={imgUrl} width="650" height="400" />
       <div className="buttons">
         <a href={demoUrl} className="myButton" target="_blank">View Demo</a>
         <a href={sourceUrl} className="myButton red" target="_blank">Source Code</a>
@@ -17,9 +20,6 @@ export function Project({ project }) {
         {tags.map(tag => <img key={Math.random()} src={`/images/tags/${tag}.svg`} />)}
 
 
-      </div>
-      <div className="desc">
-        <pre>{desc}</pre>
       </div>
     </section>
   )

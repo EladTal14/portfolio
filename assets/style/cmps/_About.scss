@@ -6,37 +6,41 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.15);
+    // box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    // border-radius: 5px;
+    // background-color: rgba(255, 255, 255, 0.15);
 
-    backdrop-filter: blur(5px);
-    p {
+    // backdrop-filter: blur(5px);
+    pre {
+      white-space: pre-wrap;
+      font-family: EBGaramand-semi-bold;
       text-shadow: 2px 2px 2px #ffffff;
       width: 80%;
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       display: block;
       word-spacing: 0.5rem;
       line-height: 2;
       color: black;
       margin-top: 2rem;
       margin-left: 2rem;
-    }
-    span {
-      font-size: 2rem;
+      span {
+        display: block;
+      }
     }
     .about-buttons {
       display: flex;
       flex-direction: column;
       max-width: fit-content;
-      margin-left: 30px;
+      margin-left: 20px;
+      margin-top: 20px;
       button {
         cursor: pointer;
         animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.5s both;
         margin-top: 10px;
         transition: transform 0.5s ease-in-out;
+        color: #b94d4c;
         &:hover {
-          background-color: #fff;
+          background-color: black;
         }
         &:last-of-type {
           margin-bottom: 10px;
@@ -45,7 +49,7 @@
         background-color: unset;
         border: 2px solid white;
         font-size: 1.5em;
-        text-shadow: 2px 2px 2px #ffffff;
+        // text-shadow: 2px 2px 2px #ffffff;
 
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
           rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -56,21 +60,19 @@
 .white {
   color: white;
 }
-.char {
-  font-size: 40px;
-  height: 40px;
-  animation: an 1s ease-out 1 both;
-  display: inline-block;
-}
+// .char {
+//   font-size: 40px;
+//   height: 40px;
+//   animation: an 1s ease-out 1 both;
+//   display: inline-block;
+// }
 @media (max-width: 800px) {
   .about-container {
     .center {
       justify-content: center;
-      p {
+      pre {
         width: 90%;
         margin: 0 auto;
-        margin-top: 1rem;
-        text-align: left;
       }
       .about-buttons {
         button {
