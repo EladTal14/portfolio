@@ -27,7 +27,6 @@ export default function About({ setShow, openMenu }) {
           <span className="break">Welcome to my portfolio website. Enjoy!</span> </pre>
 
         <div className="about-buttons">
-
           <button onClick={() => { setShow('portfolio') }}>Portfolio </button>
           <button onClick={() => { setShow('cv') }}>My CV </button>
         </div>
